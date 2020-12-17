@@ -2,11 +2,15 @@
 title: "J.S. Bach through the Markov Chain"
 author: "Miguel Ângelo Rebelo"
 date: "17/12/2020"
-output: github_document
+layout: post
+output: 
+  md_document:
+    pandoc_args: ["--wrap=none"]
+    variant: gfm
+    preserve_yaml: TRUE
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
 library(here)
 source(here::here("rmd_config.R"))
 ```
