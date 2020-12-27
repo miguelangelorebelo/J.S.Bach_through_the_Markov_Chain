@@ -235,7 +235,7 @@ is(MC, 'markovchain')
 plot(MC, edge.arrow.size=0.45, main='BWV 17.7 Markov Chain')
 ```
 
-![](Bach_files/figure-gfm/MC1-1.png)<!-- -->
+![](MC1-1.png)<!-- -->
 
 To keep in mind, since we are in A Major: A\_M (I), B (ii/II), C\#
 (iii/III), D (IV/vii of the V), E (V), F\# (vi), G\# (vii).
@@ -317,7 +317,7 @@ df_MC = melt(data.frame(steadyStates(MC)))
 ggplot(df_MC, aes(variable,value), ylim(c(0,0.3))) + geom_point(color='blue') + geom_text(aes(label=round(value, 4)), size=3, vjust=-2)
 ```
 
-![](Bach_files/figure-gfm/steadystates1-1.png)<!-- -->
+![](steadystates1-1.png)<!-- -->
 
 Next we will check the MC for transient states, absorbing states,
 recurrent and communicating classes. We can also check if F\#m is
@@ -389,7 +389,7 @@ V(MC.igraph)$color = rainbow(SCC$no)[SCC$membership]
 plot(MC.igraph, mark.groups = split(1:vcount(MC.igraph), SCC$membership), main="Communicating classes - strongly connected components")
 ```
 
-![](Bach_files/figure-gfm/classifying%20states-1.png)<!-- -->
+![](classifying%20states-1.png)<!-- -->
 
 This MC is irreducible with only one recurrent class and no transient
 classes. It also doesn’t have any transient or absorbing states. This is
@@ -458,7 +458,7 @@ have two transient classes, one from the original piece (the strongly
 connected part), and the one that was added. We can see this more
 clearly in the graph:
 
-![](Bach_files/figure-gfm/graph-1.png)<!-- -->
+![](graph-1.png)<!-- -->
 
 Now that we saw the effect of the addition in the graph, next we compute
 the Q, R and I matrices, plus the fundamental matrix.
@@ -723,7 +723,7 @@ df_all = rbind(original_df, df_damp)
 ggplot(df_all, aes(variable,value, color=SS), ylim(c(0,0.15))) + geom_point()
 ```
 
-![](Bach_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
+![](unnamed-chunk-6-1.png)<!-- -->
 
 This way, we can recover the information regarding the relevance of the
 nodes in the original chorale, which was completely lost when Bach hit
