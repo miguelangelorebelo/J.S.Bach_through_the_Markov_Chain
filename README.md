@@ -3,7 +3,7 @@ J.S. Bach through the Markov Chain
 Miguel Ângelo Rebelo
 17/12/2020
 
-[NOTE: I still am not sure how to display graphs in here. They are in the .html file if you wish to take a look.]
+[NOTE: I still am not sure how to display equations properly in here. Sorry about that...
 
 # 1. Introduction
 
